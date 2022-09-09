@@ -1,0 +1,224 @@
+{
+	"info": {
+		"_postman_id": "c21c0c1a-9152-4800-9605-5983aa753931",
+		"name": "Java Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23236390"
+	},
+	"item": [
+		{
+			"name": "ADD DIRECTOR",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Director1\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/director/add",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"director",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADD MOVIE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Director1\",\r\n    \"rating\" : 40\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/movie/add",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"movie",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ALL MOVIES",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/movie/all",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"movie",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ALL DIRECTORS",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/director/all",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"director",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LINK DIRECTOR AND MOVIE",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/movie/2/linkdirector/5",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"movie",
+						"2",
+						"linkdirector",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ALL MOVIES OF 1 DIRECTOR",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/movie/director/6",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"movie",
+						"director",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ALL MOVIES WITHIN A RATING RANGE",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/movie/min/50/max/70",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"movie",
+						"min",
+						"50",
+						"max",
+						"70"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
