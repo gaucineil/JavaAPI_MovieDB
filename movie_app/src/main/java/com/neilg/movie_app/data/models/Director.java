@@ -17,13 +17,13 @@ This class also has a basic many to many relationship with the 'Movie' class
 */
 
 /*
-@Entity annotation tells Spring that the Employee class which is simply a POJO (Plain Old Java Object) which should be persisted on the database.
+@Entity annotation tells Spring that the Director class which is simply a POJO (Plain Old Java Object) which should be persisted on the database.
  */
 @Entity
 public class Director {
 
     /*
-    @Id annotation makes the id field the primary key of the employee table when it is persisted on the database.
+    @Id annotation makes the id field the primary key of the director table when it is persisted on the database.
     @GeneratedValue annotation to specify the primary key generation strategy. The value auto instructs the database to automatically generate a value for the field.
      */
     @Id //
